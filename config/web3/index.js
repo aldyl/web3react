@@ -1,11 +1,12 @@
-import web3 from 'web3';
-import { InjectedConnector } from '@web3-react/injected-connector'; 
+import web3 from "web3";
+import { InjectedConnector } from "@web3-react/injected-connector";
 
-const ETHNETWORK_CHAIN_ID = 1;
+const ETH_NETWORK_CHAIN_ID = 1;
 export const connector = new InjectedConnector({
-    supportedChainIds: [ETHNETWORK_CHAIN_ID], });
+  supportedChainIds: [ETH_NETWORK_CHAIN_ID],
+});
 
-    export const getLibrary = (provider) => {
-        const library = new web3(provider)
-        return library;
-    }
+export const getLibrary = (provider) => {
+  const library = new web3(provider);
+  return library;
+};
