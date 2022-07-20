@@ -2,9 +2,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+npx create-next-app
+pnpm install web3 @web3-react/core @web3-react/injected-connector
+
 First, run the development server:
 
 ```bash
+pnpm dev
 npm run dev
 # or
 yarn dev
